@@ -1,8 +1,8 @@
 public class Order {
-    private String name;
-    private String phoneNumber;
-    private int[] items;
-    private double[] prices;
+    public String name;
+    public String phoneNumber;
+    public int[] items;
+    public double[] prices;
 
 
     public Order(String name, String phoneNumber, int[] items, double[] prices) {
@@ -64,12 +64,12 @@ public class Order {
 
     public static void main(String[] args) {
 
-        String customerName = "John Doe";
+        String customerName = "Dikshant Pandey";
         String customerPhone = "1234567890";
-        int[] orderedItems = {572, 681}; // Example item codes for the ordered T-shirts
-        double[] orderedPrices = {1235.0, 1780.0}; // Example prices for the ordered T-shirts
+        int[] orderedItems = {572, 681}; 
+        double[] orderedPrices = {1235.0, 1780.0}; 
 
-        // Creating an instance of Order and printing the bill
+        
         Order order = new Order(customerName, customerPhone, orderedItems, orderedPrices);
         order.printBill();
     }
